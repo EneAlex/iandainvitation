@@ -7,6 +7,10 @@
     font-family: 'DancingScript', sans-serif;
 }
 
+.caveat{
+    font-family: 'Caveat', sans-serif;
+}
+
 .upperCase{
     text-transform: uppercase;
 }
@@ -14,25 +18,54 @@
 .fontsmall{
  font-size: 25px;
  text-align: center;
-
 }
 
 .fontmedium{
     font-size: 35px;
+    text-align: center;
 }
 
 .fontlarge{
     font-size: 70px;
+    text-align: center;
 }
 
 .textCollorWhite{
-    color: whitesmoke;
+    color: black;
 }
 
 
 @media (max-width: 1000px) {
     .fontsmall{
-        font-size: 15px;
+        font-size: 35px;
+       }
+       
+       .fontmedium{
+           font-size: 45px;
+       }
+       
+       .fontlarge{
+           font-size: 65px;
+       }
+  }
+  
+  @media (max-width: 600px) {
+    .fontsmall{
+        font-size: 25px;
+       }
+       
+       .fontmedium{
+           font-size: 30px;
+       }
+       
+       .fontlarge{
+           font-size: 50px;
+       }
+  }
+
+  @media (max-width: 400px) {
+    .fontsmall{
+        font-size: 20px;
        }
        
        .fontmedium{
@@ -40,34 +73,6 @@
        }
        
        .fontlarge{
-           font-size: 50px;
-       }
-  }
-  
-  @media (max-width: 600px) {
-    .fontsmall{
-        font-size: 8px;
-       }
-       
-       .fontmedium{
-           font-size: 20px;
-       }
-       
-       .fontlarge{
-           font-size: 30px;
-       }
-  }
-
-  @media (max-width: 400px) {
-    .fontsmall{
-        font-size: 6px;
-       }
-       
-       .fontmedium{
-           font-size: 14px;
-       }
-       
-       .fontlarge{
-           font-size: 20px;
+           font-size: 40px;
        }
   }

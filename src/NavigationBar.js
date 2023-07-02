@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './NavigationBar.css';
+import './text.css';
 
 const NavigationBar = () => {
 
@@ -8,9 +9,9 @@ const NavigationBar = () => {
 
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        const threshold = document.getElementById('story').offsetTop - 100;
-        const newNavbarBgColor = scrollPosition > threshold ? 'white' : 'transparent';
-        const newNavbarTextColor = scrollPosition > threshold ? 'gold' : '#5F574F';
+        const threshold = document.getElementById('story').offsetTop;
+        const newNavbarBgColor = scrollPosition > threshold ? 'antiquewhite' : 'antiquewhite';
+        const newNavbarTextColor = scrollPosition > threshold ? '#5F574F' : '#5F574F';
         setNavbarBgColor(newNavbarBgColor);
         setNavbarTextColor(newNavbarTextColor);
     };
@@ -23,16 +24,16 @@ const NavigationBar = () => {
     }, []);
 
     return (
-        <nav className="navbar" style={{ backgroundColor: navbarBgColor }}>
+        <nav className="navbar-alex" style={{ backgroundColor: navbarBgColor }}>
             {/* <div className='invitaionLogo'>
           <div className='guestName'>Draga invitat</div>
           <div className='weddingDate'>21 Octombrie 2023</div>
         </div> */}
-            <div className='nav-links'>
-                <a style={{ color: navbarTextColor }} href="#ce" className="nav-link">Ce?</a>
-                <a style={{ color: navbarTextColor }} href="#cand" className="nav-link">Când?</a>
-                <a style={{ color: navbarTextColor }} href="#unde" className="nav-link">Unde?</a>
-                <a style={{ color: navbarTextColor }} href="#confirmare" className="nav-link">Confirmare</a>
+            <div className='nav-links-alex'>
+                <a style={{ color: navbarTextColor }} href="#ce" className="nav-link-alex caveat fontsmall">Ce?</a>
+                <a style={{ color: navbarTextColor }} href="#cand" className="nav-link-alex caveat fontsmall">Când?</a>
+                <a style={{ color: navbarTextColor }} href="#unde" className="nav-link-alex caveat fontsmall">Unde?</a>
+                <a style={{ color: navbarTextColor }} href="#confirmare" className="nav-link-alex caveat fontsmall">Confirmare</a>
             </div>
         </nav>
     );

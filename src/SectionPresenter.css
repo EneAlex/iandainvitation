@@ -62,9 +62,16 @@ flex :1;
 }
 
 .eng-label{
-} */
+} */    
 
 .anim-we{
 width: 30%;
 }
+
+.story{
+    justify-content: start;
+    align-items: end;
+}
+
+
 
